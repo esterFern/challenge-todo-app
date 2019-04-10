@@ -1,0 +1,30 @@
+.update-form{
+  display: flex;
+  justify-content: center;
+}
+
+.update-form form{
+  position: absolute;
+  top: 20vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+
+}
+.update-form h3{
+  margin: 0;
+}
+
+.update-form input{
+  margin: 10px;
+}
+
+.close-button{
+  align-self: flex-start;
+  justify-self: flex-end;
+  margin: 5px;
+}

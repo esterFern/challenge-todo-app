@@ -1,0 +1,10 @@
+.create-button{
+  background-color: rgb(59, 63, 71);
+  color: rgb(255, 255, 255);
+  border: none;
+  
+}
+
+.create-form input{
+  margin: 5px;
+}
