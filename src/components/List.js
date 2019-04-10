@@ -97,6 +97,7 @@ export default class List extends Component {
     return (
       <div>
         {this.renderUpdate()}
+        <p>Mark as done the tasks clicking over their title</p>
         <div className="list">
           {this.renderList()}
         </div>

@@ -1,12 +1,33 @@
 import React, { Component } from 'react'
 import './componentsCSS/todo.css';
+
 export default class Todo extends Component {
+
+  state = {
+    done: false
+  }
+
+  handleDone=()=> {
+    this.setState({ 
+      done: !this.state.done 
+    });
+  }
   render() {
+    let doneStyle ={}
+    if (this.state.done === true) {
+      doneStyle = {
+        textDecoration: 'line-through'
+      }
+    } else {
+      doneStyle = {
+        textDecoration: ''
+      }
+    }
     return (
       <>
         <div className="todo">
           <div className="todo-left">
-            <h3>{this.props.title}</h3>
+            <h3 onClick={this.handleDone} style={doneStyle}>{this.props.title}</h3>
             <p>{this.props.body}</p>
           </div>
           <div className="todo-right">
